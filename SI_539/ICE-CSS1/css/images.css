@@ -1,0 +1,20 @@
+* {
+    background-color: green;
+}
+body{
+    display: block;
+}
+ img {
+    width: 10em;
+    margin: 30px;
+    border: solid 5px;
+    padding: 3em;
+    background-color: white;
+
+}
+.hover:hover {
+border-radius: 45%;
+}
+.hover:active {
+border-color: blue;
+}
