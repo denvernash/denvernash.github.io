@@ -1,20 +1,53 @@
 * {
-    background-color: green;
+    background-color: white;
 }
 body{
     display: block;
 }
  img {
-    width: 10em;
+    width: 7em;
     margin: 30px;
     border: solid 5px;
     padding: 3em;
-    background-color: white;
+    background-color: white;\
 
 }
+
 .hover:hover {
 border-radius: 45%;
 }
-.hover:active {
-border-color: blue;
+.active:active {
+opacity: .25;
+}
+.focus:focus {
+    filter: grayscale(100%);
+}
+
+.bar {
+    padding: 1em;
+    background-color: grey;
+    position: relative;
+    top: 50px
+}
+.square {
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+    position: relative;
+    right: 10px;
+
+
+}
+.square:active {
+    background-color: red;
+    animation-name: square;
+    animation-duration: 10s;
+}
+
+@keyframes square {
+    0% {transform: rotate(0px);}
+    25% {transform: rotate(25px);}
+    50% {background-color: red;}
+    75% {background-color: yellow;}
+    100% {background-color: blue;}
 }
