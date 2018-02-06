@@ -48,10 +48,10 @@ aside {
   float: right;
   background-color: white;
   background-image: url(http://www.literarygenius.info/images/william-shakespeare.jpg);
-  background-size: 150px;
+  background-size: 10em;
   background-repeat: no-repeat;
-  background-position: 50% 80%;
-  padding-bottom: 288px;
+  background-position: 50% 70%;
+  padding-bottom: 18em;
 }
 
 
