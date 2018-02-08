@@ -38,16 +38,27 @@ opacity: .25;
 
 
 }
-.square:active {
-    background-color: red;
-    animation-name: square;
-    animation-duration: 10s;
+.square:active, .square:focus {
+    background-color: red, blue;
+    animation-name: rotate, move;
+    animation-duration: 5s, 10s;
 }
 
-@keyframes square {
-    0% {transform: rotate(0px);}
-    25% {transform: rotate(25px);}
-    50% {background-color: red;}
-    75% {background-color: yellow;}
-    100% {background-color: blue;}
+,  {
+    animation-name: move;
+    animation-duration: 5s;
+    animation-direction: alternate;
+
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}
+@keyframes move {
+    from {left:0px;}
+    to {left: 300px;}
 }
