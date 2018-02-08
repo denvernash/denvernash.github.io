@@ -38,16 +38,19 @@ opacity: .25;
 
 
 }
-.square:active, .square:focus {
+.square:active, {
     background-color: red, blue;
     animation-name: rotate, move;
     animation-duration: 5s, 10s;
 }
-
+.square:focus {
+  
+}
 ,  {
     animation-name: move;
     animation-duration: 5s;
     animation-direction: alternate;
+    animation-fill-mode: forwards;
 
 }
 
