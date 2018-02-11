@@ -65,5 +65,5 @@ opacity: .25;
 }
 @keyframes move {
     from {left:0px;}
-    to {left: 1800px;}
+    to {left: 1200px;}
 }
