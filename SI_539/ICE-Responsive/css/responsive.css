@@ -23,7 +23,8 @@
    grid-row: auto;
    grid-gap: 10px;
    grid-column: auto;
-   margin: 10px;
+   margin-bottom: 10px;
+   margin-left: 10px;
 
 
  }
