@@ -23,6 +23,8 @@
    grid-row: auto;
    grid-gap: 10px;
    grid-column: auto;
+   margin: 10px;
+
 
  }
   }
@@ -56,4 +58,18 @@
   padding-top: 20px;
   width: 8em;
 }
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.item {
+grid-row: auto;
+grid-column: span 2;
+
+}
+
+
+
 }
