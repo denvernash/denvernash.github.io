@@ -7,12 +7,11 @@
     function checkForm(){
     	s = document.getElementById("opt-straw").checked;
 			b = document.getElementById("opt-blue").checked;
-			alert("Strawberries is " + s);
-			alert("Blueberries is " + b);
+
 			// alert(b)
 			if (s == true) {return true}
 			if (b == true) {return true}
-			else {return false};
+			else {alert("Please select your favorite berry!"); return false};
 			// Write a function that ensures at least one but ONLY one radio button is selected.  Make sure the form action is not performed if either field is blank.
 		}
     </script>
