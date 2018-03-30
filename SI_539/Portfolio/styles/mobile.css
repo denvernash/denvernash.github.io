@@ -1,0 +1,150 @@
+
+@media only screen and (min-width: 650px){
+  #menu{
+    display: none;
+  }
+
+  nav div{
+    display: inline-block;
+    padding: 0px 20px;
+    border: solid blue 1px;
+    margin-top: 10px;
+  }
+
+.banner {
+  grid-template-areas:
+  'header header header'
+  'empty1 empty1 empty1'
+  'profile profile quote'
+  'empty2 empty2 empty2';
+  height: 70vh;
+}
+
+.quote{
+  display: block;
+  grid-area: quote;
+  border: solid purple 2px;
+
+  font-style: italic;
+  letter-spacing: 1.12px;
+  line-height: 40px;
+  font-weight: 400;
+  font-family: thin sans-serif;
+  padding: 0 25px 0;
+  margin: auto 10px auto;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  background-color: transparent;
+  text-align: center;
+}
+.julius {
+  font-size: 25px;
+}
+#profile_pic {
+  margin-left: 25px;
+}
+
+.skills_icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+
+}
+.skill-1{
+  display: block;
+  grid-column: 1;
+  grid-row: 1;
+}
+.skill-2{
+  grid-column: 2;
+  grid-row: 1;
+}
+.skill-3{
+  grid-column: 3;
+  grid-row: 1;
+}
+
+}
+@media only screen and (min-width: 900px){
+
+#profile_pic {
+  margin: auto auto 5px;
+}
+
+.banner {
+  grid-template-areas:
+  'header header header'
+  'empty1 profile empty2'
+  'empty1 social empty2'
+  'empty1 quote empty2';
+  height: 85vh;
+  min-height: 26em;
+}
+
+
+
+.social_links{
+  grid-area: social;
+  border: solid blue 2px;
+  padding-bottom: 10px;
+
+  display: grid;
+  grid-template-columns:
+  1fr 1fr 1fr 1fr 1fr;
+  height: 3em;
+  overflow: hidden;
+  /* margin: 0 auto auto; */
+}
+.social_links img {
+  border: dashed black 1px;
+  height: 3em;
+  padding: 2px;
+
+}
+#email {
+  grid-area: email;
+  grid-column: 2;
+  grid-row: 1;
+  margin: auto 0 auto auto;
+}
+#linkedin {
+  grid-area: linkedin;
+  grid-column: 3;
+  grid-row: 1;
+  margin: auto auto auto auto;
+
+}
+#github {
+  grid-area: github;
+  grid-column: 4;
+  grid-row: 1;
+
+}
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  /* box-sizing: border-box; */
+
+}
+
+
+.proj1{
+  grid-column: 1;
+}
+.proj2{
+  grid-column: 2;
+}
+.proj3 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.projm {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+
+
+}
