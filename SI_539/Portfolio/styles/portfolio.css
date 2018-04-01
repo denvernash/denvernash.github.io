@@ -201,5 +201,19 @@ h2 {
 
 
 footer{
-  background-color: rgba(26,26,26,.7);;
+  background-color: rgba(26,26,26,.7);
+}
+.social_footer{
+  margin: auto;
+  text-align: center;
+  display: block;
+  border: blue solid 2px;
+}
+.social_footer img{
+  height: 48px;
+}
+.empty3 {
+  height: 50px;
+  background-color: rgba(26,26,26,.7);
+  text-align: center;
 }
