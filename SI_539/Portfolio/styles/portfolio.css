@@ -79,19 +79,11 @@ nav img {
 }
 .port {
   background-image: url("../images/headers/header_projects.jpeg");
-  grid-template-areas:
-  'header header header'
-  'empty1 empty1 empty1'
-  'quote quote quote'
-  'empty2 empty2 empty2';
+
 }
 .prof {
   background-image: url("../images/headers/header_profile.jpeg");
-  grid-template-areas:
-  'header header header'
-  'empty1 empty1 empty1'
-  'quote quote quote'
-  'empty2 empty2 empty2';
+
 }
 
 .banner a {
