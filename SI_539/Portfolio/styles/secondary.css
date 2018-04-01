@@ -1,0 +1,33 @@
+.port, .prof {
+  grid-template-areas:
+  'header header header'
+  'empty1 empty1 empty1'
+  'quote quote quote'
+  'profile social social'
+  'empty2 empty2 empty2';
+  height: 85vh;
+  min-height: 26em;
+}
+.port #profile_pic, .prof #profile_pic {
+  display: none;
+}
+.port .social_links, .prof .social_links {
+  display: none;
+}
+.quote{
+  display: block;
+  grid-area: quote;
+  border: solid purple 2px;
+
+  font-style: italic;
+  letter-spacing: 1.12px;
+  line-height: 40px;
+  font-weight: 400;
+  font-family: thin sans-serif;
+  padding: 0 25px 0;
+  margin: auto 10px auto;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  background-color: transparent;
+  text-align: center;
+}
