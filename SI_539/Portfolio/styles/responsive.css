@@ -80,7 +80,17 @@
   height: 85vh;
   min-height: 26em;
 }
-
+.port {
+  grid-template-areas:
+  'header header header'
+  'empty1 empty1 empty1'
+  'quote quote quote'
+  'profile social social'
+  'empty2 empty2 empty2';
+  height: 85vh;
+  min-height: 26em;
+  #profile_pic {display: none;}
+}
 
 
 .social_links{
