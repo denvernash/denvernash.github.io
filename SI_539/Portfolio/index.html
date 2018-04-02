@@ -3,11 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta name = 'viewport' content= 'width=device-width, initial-scale=1, shrink-to-fit=no user-scalable=yes'>
+    <title>Denver Nash</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
     <link rel='stylesheet' href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/portfolio.css">
     <link rel="stylesheet" href="./styles/responsive.css">
-    <title>Denver Nash</title>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    $(window).scroll(function(){
+      var sticky = $('.sticky'),
+      scroll = $(window).scrollTop();
+
+      if (scroll >= 100){
+        $(sticky.addClass('fixed'));
+        $(".fixed").delay(50).animate({"opacity": "1"}, 700);
+      }
+      else {
+        $(sticky.removeClass('fixed'));
+        $(".fixed").animate({"opacity": "0"}, 1);
+
+    }
+    }); });
+    </script>
+
   </head>
   <body>
     <!-- background image banner -->
@@ -15,7 +37,7 @@
 
 
     <!-- Title and Nav -->
-    <header>
+    <header class= 'sticky'>
       <div class="title">Denver Nash</div>
       <nav>
         <a href='index.html'><div class="hompage nav_display">Home</div></a>
@@ -56,8 +78,8 @@
     <a href = 'projects.html' tabindex="1">
     <div class= 'project_img'>
     <img src= "./images/thumbnails/thumb_payment.jpg" alt= 'asb thumb'/>
-    <span class= 'fig'><div class= 'text'>UX Research</div></span>
-    </div><h3>Alternative Spring Break</h3></a>
+    <span class= 'fig'><div class= 'text'>TEXT</div></span>
+  </div><h3>Alternative Spring Break</h3></a><h4>UX Research</h4>
     </div>
 
 
@@ -67,8 +89,8 @@
     <a href = 'projects.html'>
     <div class= 'project_img'>
     <img src= "./images/thumbnails/thumb_inflo.jpg" alt= 'inflo thumb' />
-    <span class = 'fig'><div class= 'text'>UX Research</div></span>
-    </div><h3>Inflo Consultation</h3></a>
+    <span class = 'fig'><div class= 'text'>TEXT</div></span>
+    </div><h3>Inflo Consultation</h3></a><h4>UX Research</h4>
     </div>
 
 
@@ -78,8 +100,8 @@
     <a href = 'projects.html'>
     <div class= 'project_img'>
     <img src= "./images/thumbnails/thumb_turbo.png" alt= 'turbo thumb' />
-    <span class = 'fig'><div class= 'text'>UX Design</div></span>
-    </div><h3>Turbo Health</h3></a>
+    <span class = 'fig'><div class= 'text'>TEXT</div></span>
+  </div><h3>Turbo Health</h3></a><h4>UX Design</h4>
     </div>
 
 
@@ -93,7 +115,7 @@
     <img id= 'm3' src= "./images/thumbnails/thumb_sunport.png" alt= 'more projects' />
     <img id= 'm4' src= "./images/thumbnails/thumb_profile.jpeg" alt= 'more projects' />
     <span class = 'fig'><div class= 'text'>Various</div></span>
-    </div><h3>More Projects</h3></a>
+  </div><h3>More Projects</h3></a><h4>UX Research & Design</h4>
     </div>
 
 
@@ -165,7 +187,6 @@
 
 
     </div>
-
     <footer>
       <div class= "social_footer">
         <a id= 'email' href= 'mailto:denver.ryan.nash@gmail.com'><img src = './images/icons/social-links/iconmonstr-email-10-64.png' alt= 'icon'></a>
