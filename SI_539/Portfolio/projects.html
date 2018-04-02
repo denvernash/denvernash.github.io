@@ -9,20 +9,44 @@
     <link rel="stylesheet" href="./styles/responsive.css">
     <link rel="stylesheet" href="./styles/secondary.css">
     <title>Denver Nash</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    var sticky_vis = false;
+    $(document).ready(function(){
+    $(window).scroll(function(){
+      var sticky = $('.sticky'),
+      scroll = $(window).scrollTop();
+
+      if (scroll >= 50 && !sticky_vis){
+        $(sticky.addClass('fixed'));
+        $('.fixed').slideUp(0);
+        $('.fixed').slideDown(300);
+        sticky_vis = true;
+      }
+      else if (scroll < 50 && sticky_vis){
+        sticky_vis = false;
+        sticky.removeClass('fixed');
+    }
+    }); });
+    </script>
+
+
+
   </head>
   <body>
     <div class="banner port">
-    <header>
-      <div class="title">Denver Nash</div>
-      <nav>
-        <div class="hompage"><a href='index.html'>Home</a></div>
-
-        <div class="projects nav_display"><a href='projects.html'>Projects</a></div>
-        <div class="profile"><a href='profile.html'>Profile</a></div>
-      <img id= 'menu' src= './images/icons/IKONS/PNG/64/list.png' alt= 'menu icon'>
-
-      </nav>
-    </header>
+      <!-- Title and Nav -->
+      <header class= 'sticky'>
+        <div class="title">Denver Nash</div>
+        <nav>
+          <a href='index.html'><div class="hompage">Home</div></a>
+          <a href='projects.html'><div class="projects nav_display">Projects</div></a>
+          <a href='profile.html'><div class="profile">Profile</div></a>
+          <img id= 'menu' src= './images/icons/IKONS/PNG/64/list.png' alt= 'menu icon'>
+        </nav>
+      </header>
+      <div class="abs"></div>
     <div id= 'profile_pic'></div>
     <div class= "social_links"></div>
     <div class= 'quote'>UX Design Research</div>
