@@ -6,9 +6,14 @@
 
   nav div{
     display: inline-block;
-    padding: 0px 20px;
-    border: solid blue 1px;
-    margin-top: 10px;
+    padding: 10px 20px 12px;
+    margin-top: 0px;
+  }
+  nav div:hover{
+    padding-bottom: 14px;
+    border-bottom: none;
+    background-color: rgb(220,220,220,.1);
+
   }
 
 .banner {
@@ -98,9 +103,14 @@
 .social_links img {
   border: dashed black 1px;
   height: 3em;
-  padding: 2px;
-
+  margin: 2px;
 }
+
+.social_links img:hover{
+  background-color: white;
+  border-radius: 50%;
+}
+
 #email {
   grid-area: email;
   grid-column: 2;
