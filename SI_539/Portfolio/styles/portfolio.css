@@ -137,19 +137,23 @@ h2 {
 }
 
 
-
-.project_img, .project_box{
+.project_box{
   text-align: center;
-  /* border: dashed purple 2px; */
   margin: 0;
+  border: solid blue 2px;
+}
+.project_img {
+  text-align: center;
+  margin: auto;
   position: relative;
-
-
+  border: solid green 3px;
+  width: 325px;
+  height: 13em;
 
 }
 
 .project_img img {
-  display: block;
+  display: inline;
   border: dashed black 2px;
   margin: auto;
   width: 325px;
@@ -218,7 +222,7 @@ h2 {
 .project_img:after{
   content: "";
   height: 100%;
-  left: 0;
+  left: 0px;
   top: 0;
   width: 0px;
   position: absolute;
