@@ -13,19 +13,21 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
+    var sticky_vis = false;
     $(document).ready(function(){
     $(window).scroll(function(){
       var sticky = $('.sticky'),
       scroll = $(window).scrollTop();
 
-      if (scroll >= 100){
+      if (scroll >= 50 && !sticky_vis){
         $(sticky.addClass('fixed'));
-        $(".fixed").delay(50).animate({"opacity": "1"}, 700);
+        $('.fixed').slideUp(0);
+        $('.fixed').slideDown(300);
+        sticky_vis = true;
       }
-      else {
-        $(sticky.removeClass('fixed'));
-        $(".fixed").animate({"opacity": "0"}, 1);
-
+      else if (scroll < 50 && sticky_vis){
+        sticky_vis = false;
+        sticky.removeClass('fixed');
     }
     }); });
     </script>
@@ -46,6 +48,7 @@
         <img id= 'menu' src= './images/icons/IKONS/PNG/64/list.png' alt= 'menu icon'>
       </nav>
     </header>
+    <div class="abs"></div>
 
 
     <!-- banner material - profile, social links, and quote -->
