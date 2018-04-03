@@ -5,9 +5,15 @@
   'quote quote quote'
   'profile social social'
   'empty2 empty2 empty2';
-  height: 85vh;
-  min-height: 26em;
+
 }
+.proj_text {
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+  border-bottom: solid black 1px;
+}
+
+
 .port #profile_pic, .prof #profile_pic {
   display: none;
 }
@@ -17,7 +23,7 @@
 .quote{
   display: block;
   grid-area: quote;
-  border: solid purple 2px;
+
 
   font-style: italic;
   letter-spacing: 1.12px;
@@ -30,4 +36,71 @@
   font-size: 40px;
   background-color: transparent;
   text-align: center;
+}
+
+.portfolio{
+  display: block;
+}
+
+.fig{
+  width: 450px;
+  height: 17em;
+}
+
+
+.project_img, .project_img img{
+  width: 450px;
+  height: 17em;
+}
+p{
+  display: none;
+}
+@media only screen and (min-width: 650px){
+
+p{
+  display: block;
+}
+.portfolio{
+  grid-template-columns: 1fr;
+}
+
+
+.proj_text {
+  border-bottom: none;
+}
+
+
+}
+
+
+@media only screen and (min-width: 900px){
+.portfolio{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project_box{
+  grid-column: 1;
+
+}
+.proj_text{
+  grid-column: 2;
+  margin-top: 30px;
+
+}
+
+.proj2{
+  grid-row: 2;
+}
+.proj3 {
+
+  grid-row: 3;
+}
+.proj4 {
+  grid-row: 4;
+}
+
+
+
+
 }

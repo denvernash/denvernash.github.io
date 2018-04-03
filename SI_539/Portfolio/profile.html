@@ -29,6 +29,16 @@
         sticky.removeClass('fixed');
     }
     }); });
+    $(document).ready(function(){
+    $("#menu").click(function(){
+    $('.slide').slideToggle(200);
+      });
+      });
+      $(document).ready(function(){
+      $('.slide_close').click(function(){
+        $('.slide').slideToggle(200);
+        });
+        });
     </script>
 
 
@@ -45,8 +55,22 @@
           <a href='profile.html'><div class="profile nav_display">Profile</div></a>
           <img id= 'menu' src= './images/icons/IKONS/PNG/64/list.png' alt= 'menu icon'>
         </nav>
+
+      <!-- sliding menu -->
+        <div class="slide">
+          <img class= 'slide_close' src="./images/icons/IKONS/PNG/64/circle_delete.png" alt="close icon">
+          <ul>
+            <a href='index.html'><li>Home</li></a>
+            <a href='projects.html'><li>Projects</li></a>
+            <a href='profile.html'><li>Profile</li></a>
+          </ul>
+        </div>
       </header>
       <div class="abs"></div>
+
+
+
+
     <div id= 'profile_pic'></div>
     <div class= "social_links"></div>
     <div class= 'quote'>Resume</div>

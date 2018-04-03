@@ -29,6 +29,16 @@
         sticky.removeClass('fixed');
     }
     }); });
+    $(document).ready(function(){
+    $("#menu").click(function(){
+    $('.slide').slideToggle(200);
+      });
+      });
+      $(document).ready(function(){
+      $('.slide_close').click(function(){
+        $('.slide').slideToggle(200);
+        });
+        });
     </script>
 
 
@@ -45,8 +55,20 @@
           <a href='profile.html'><div class="profile">Profile</div></a>
           <img id= 'menu' src= './images/icons/IKONS/PNG/64/list.png' alt= 'menu icon'>
         </nav>
+
+      <!-- sliding menu -->
+        <div class="slide">
+          <img class= 'slide_close' src="./images/icons/IKONS/PNG/64/circle_delete.png" alt="close icon">
+          <ul>
+            <a href='index.html'><li>Home</li></a>
+            <a href='projects.html'><li>Projects</li></a>
+            <a href='profile.html'><li>Profile</li></a>
+          </ul>
+        </div>
       </header>
       <div class="abs"></div>
+
+
     <div id= 'profile_pic'></div>
     <div class= "social_links"></div>
     <div class= 'quote'>UX Design Research</div>
@@ -54,5 +76,96 @@
     <div class= 'empty2'></div>
   </div>
 
-  </body>
+
+  <div class= 'main content'>
+  <h2>Portfolio</h2>
+
+  <!-- portfolio section starts -->
+  <div class= 'portfolio'>
+
+
+
+  <!-- project 1 -->
+  <div class= 'project_box proj1'>
+  <a href = 'projects.html'>
+  <div class= 'project_img'>
+  <img src= "./images/thumbnails/thumb_payment.jpg" alt= 'asb thumb'/>
+  <span class= 'fig'><div class= 'text'>TEXT</div></span>
+</div><h3>Alternative Spring Break</h3></a><h4>UX Research</h4>
+  </div>
+
+<div class= 'project_box proj_text proj1_text'>
+  <h4>Methods: Surveys, Interviews, Data visualization, Affinity Diagramming</h4>
+  <p>Conducted user research with the city of Fort Myers,
+    Florida to discover key insights into customer behavior
+    related to water bill payment and offer recommendations
+    to reduce costly account delinquency</p>
+</div>
+
+  <!-- project 2 -->
+  <div class= 'project_box proj2'>
+  <a href = 'projects.html'>
+  <div class= 'project_img'>
+  <img src= "./images/thumbnails/thumb_inflo.jpg" alt= 'inflo thumb' />
+  <span class = 'fig'><div class= 'text'>TEXT</div></span>
+  </div><h3>Inflo Consultation</h3></a><h4>UX Research</h4>
+  </div>
+
+  <div class= 'project_box proj_text proj2_text'>
+    <h4>Methods: Surveys, Interviews, Data visualization, Affinity Diagramming</h4>
+    <p>Conducted user research with the city of Fort Myers,
+      Florida to discover key insights into customer behavior
+      related to water bill payment and offer recommendations
+      to reduce costly account delinquency</p>
+  </div>
+
+  <!-- project 3 -->
+  <div class= 'project_box proj3'>
+  <a href = 'projects.html'>
+  <div class= 'project_img'>
+  <img src= "./images/thumbnails/thumb_turbo.png" alt= 'turbo thumb' />
+  <span class = 'fig'><div class= 'text'>TEXT</div></span>
+</div><h3>Turbo Health</h3></a><h4>UX Design</h4>
+  </div>
+
+  <div class= 'project_box proj_text proj3_text'>
+    <h4>Methods: Surveys, Interviews, Data visualization, Affinity Diagramming</h4>
+    <p>Conducted user research with the city of Fort Myers,
+      Florida to discover key insights into customer behavior
+      related to water bill payment and offer recommendations
+      to reduce costly account delinquency</p>
+  </div>
+
+
+  <!-- project collage -->
+  <div class= 'project_box proj4'>
+  <a href = 'projects.html'>
+  <div class = 'project_img'>
+  <img src= "./images/thumbnails/thumb_design_jam.jpeg" alt= 'jam thumb' />
+  <span class = 'fig'><div class= 'text'>Various</div></span>
+</div><h3>More Projects</h3></a><h4>UX Research & Design</h4>
+  </div>
+
+
+  <div class= 'project_box proj_text proj4_text'>
+    <h4>Methods: Surveys, Interviews, Data visualization, Affinity Diagramming</h4>
+    <p>Conducted user research with the city of Fort Myers,
+      Florida to discover key insights into customer behavior
+      related to water bill payment and offer recommendations
+      to reduce costly account delinquency</p>
+  </div>
+
+  </div>
+</div>
+
+
+<footer>
+  <div class= "social_footer">
+    <a id= 'email' href= 'mailto:denver.ryan.nash@gmail.com'><img src = './images/icons/social-links/iconmonstr-email-10-64.png' alt= 'icon'></a>
+    <a id= 'linkedin' href= 'https://www.linkedin.com/in/denver-nash/'><img src = './images/icons/social-links/iconmonstr-linkedin-4-64.png' alt= 'icon'></a>
+    <a id= 'github' href= 'https://github.com/denvernash'><img src = './images/icons/social-links/iconmonstr-github-4-64.png' alt= 'icon'></a>
+  </div>
+  <div class= "empty3">Copyright &copy 2018 Denver Nash</div>
+</footer>
+</body>
 </html>
