@@ -149,8 +149,11 @@ nav img, .slide_close {
 
 
 
-h2 {
+.main_content h2 {
   text-align: center;
+  border-bottom: solid black 1px;
+  border-top: solid black 1px;
+  padding: 20px;
 }
 
 
@@ -167,6 +170,12 @@ h2 {
   margin: 0;
 
 }
+
+.project_box a {
+
+}
+
+
 .project_img {
   text-align: center;
   margin: auto;
