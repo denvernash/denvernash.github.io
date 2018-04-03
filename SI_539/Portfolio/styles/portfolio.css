@@ -252,10 +252,17 @@ h2 {
 .project_img:after{ background: linear-gradient(-90deg,#83a4d4, #b6fbff); z-index: -1;}
 
 
-
+.skl {display: none;}
 .skl img{
 height: 64px;
+
 }
+.skill-1, .skill-3, .skill-4{
+  display: block;
+}
+
+
+
 
 footer{
   background-color: rgba(26,26,26,.7);

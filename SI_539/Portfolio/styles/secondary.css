@@ -10,6 +10,8 @@
 .proj_text {
   margin-bottom: 60px;
   padding-bottom: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
   border-bottom: solid black 1px;
 }
 
@@ -65,9 +67,7 @@ p{
 }
 
 
-.proj_text {
-  border-bottom: none;
-}
+
 
 
 }
@@ -81,6 +81,7 @@ p{
 
 .project_box{
   grid-column: 1;
+  margin-bottom: 60px;
 
 }
 .proj_text{
@@ -100,7 +101,9 @@ p{
   grid-row: 4;
 }
 
-
+/* .proj_text {
+  border-bottom: none;
+} */
 
 
 }
