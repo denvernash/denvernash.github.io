@@ -206,7 +206,7 @@ h2 {
 
 
 .fig {
-
+  padding-top: 30px;
   display: inline;
   box-sizing: border-box;
   width: 329px;
@@ -224,8 +224,10 @@ h2 {
   text-align: center;
 }
 
-.text{
-  margin-top: 25%;
+.text {
+
+  border: dashed green 2px;
+  padding: 0 20px;
 
 
 }
