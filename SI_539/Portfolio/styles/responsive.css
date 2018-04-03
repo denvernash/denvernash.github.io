@@ -23,6 +23,7 @@
   'profile profile quote'
   'empty2 empty2 empty2';
   height: 70vh;
+  min-height: 400px;
 }
 
 .quote{
@@ -31,10 +32,11 @@
 
 
   font-style: italic;
-  letter-spacing: 1.12px;
-  line-height: 40px;
-  font-weight: 400;
-  font-family: thin sans-serif;
+  letter-spacing: 5px;
+
+  font-weight: normal;
+
+  font-family: 'Bilbo Swash Caps', cursive;
   padding: 0 25px 0;
   margin: auto 10px auto;
   color: rgb(255, 255, 255);
@@ -156,10 +158,11 @@
 .social_links img {
   height: 40px;
   margin: 2px;
+  filter: invert(100%);
 }
 
 .social_links img:hover{
-  background-color: white;
+  background-color: #C0C0C0;
   border-radius: 50%;
 }
 
