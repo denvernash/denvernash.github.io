@@ -6,15 +6,22 @@
 
   nav div{
     display: inline-block;
-    padding: 10px 20px 12px;
+    padding: 10px 20px 14px;
     margin-top: 0px;
   }
-  nav div:hover, .fixed nav div:hover{
-    padding-bottom: 14px;
-    border-bottom: none;
+  nav div:hover {
     background-color: rgb(220,220,220,.5);
-
   }
+
+  .fixed nav div:hover {
+    background-color: #c3c3c3;
+  }
+
+  nav div:hover.nav_display:after{
+  display: none;
+  }
+
+
 
 .banner {
   grid-template-areas:
@@ -78,16 +85,18 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  /* box-sizing: border-box; */
 
 }
 
 
 .proj1{
   grid-column: 1;
+  margin-bottom: 80px;
+
 }
 .proj2{
   grid-column: 2;
+  margin-bottom: 80px;
 }
 .proj3 {
   grid-column: 1;
@@ -196,9 +205,11 @@
 
 .proj1{
   grid-column: 1;
+  margin-bottom: 0;
 }
 .proj2{
   grid-column: 2;
+  margin: 0;
 }
 .proj3 {
   grid-column: 3;
