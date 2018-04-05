@@ -304,7 +304,7 @@ nav img, .slide_close {
 .project_img:after{ background: linear-gradient(-90deg,#83a4d4, #b6fbff); z-index: -1;}
 
 
-.skl {display: none; }
+.skl {display: none; padding: 40px 25px;}
 .skl img{ height: 64px; }
 
 
@@ -334,7 +334,7 @@ footer{
 }
 
 .empty3 {
-  padding: 64px 32px;
+  padding: 24px 32px;
   background-color: rgba(26,26,26,.7);
   text-align: left;
   color: white;

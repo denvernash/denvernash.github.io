@@ -25,22 +25,55 @@
         $('.fixed').slideUp(0);
         $('.fixed').slideDown(300);
         sticky_vis = true;
-      }
+        }
       else if (scroll < 50 && sticky_vis){
         sticky_vis = false;
         sticky.removeClass('fixed');
-    }
-    }); });
+        };
+        });
+        });
     $(document).ready(function(){
     $("#menu").click(function(){
     $('.slide').slideToggle(200);
       });
       });
-      $(document).ready(function(){
+    $(document).ready(function(){
       $('.slide_close').click(function(){
-        $('.slide').slideToggle(200);
+      $('.slide').slideToggle(200);
         });
         });
+    $(document).ready(function() {
+    var $window = $(window);
+    var small = false;
+    var skl1 = $('.skill-1 figcaption');
+    var skl2 = $('.skill-3 figcaption');
+    var skl2i = $('.skill-3 img');
+    var skl3 = $('.skill-4 figcaption');
+
+    function checkWidth() {
+        var windowsize = $window.width();
+
+        if (windowsize < 650 && !small) {
+            //if window size is mobile
+            skl1.text("Design");
+            skl2.text("Research");
+            skl2i.attr('src', './images/icons/IKONS/PNG/64/bar_chart_2.png');
+            skl3.text("Code");
+            small = true;
+        }
+        else if (windowsize >= 650 && small){
+          small = false;
+          skl1.text(skl1.data('default-value'));
+          skl2.text(skl2.data('default-value'));
+          skl2i.attr('src', './images/icons/iconmonstr/sitemap16.png');
+          skl3.text(skl3.data('default-value'));
+        }
+    }
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $window.resize(checkWidth);
+});
 
     </script>
 
@@ -164,7 +197,7 @@
       <!-- skill 1 -->
       <figure class= "skl skill-1">
         <img src = './images/icons/IKONS/PNG/64/pen_2.png' alt= 'icon'><br>
-        <figcaption>Brainstorming & Sketching</figcaption>
+        <figcaption data-default-value="Brainstorming & Sketching">Brainstorming & Sketching</figcaption>
       </figure>
 
       <!-- skill 2 -->
@@ -176,13 +209,13 @@
       <!-- skill 3 -->
       <figure class= 'skl skill-3'>
         <img src = './images/icons/iconmonstr/sitemap16.png' alt= 'icon'><br>
-        <figcaption>Contextual Inquiry</figcaption>
+        <figcaption data-default-value= 'Contextual Inquiry'>Contextual Inquiry</figcaption>
       </figure>
 
       <!-- skill 4 -->
       <figure class= 'skl skill-4'>
         <img src = './images/icons/IKONS/PNG/64/code.png' alt= 'icon'><br>
-        <figcaption>Python</figcaption>
+        <figcaption data-default-value= "Python">Python</figcaption>
       </figure>
 
       <!-- skill 5 -->
