@@ -59,14 +59,9 @@ p{
 }
 
 
-/* .project_box h4{
- display: block;
- background-color: inherit;
- position: static;
-
- color: black;
-
-} */
+.project_box h4{
+font-size: 20pt;
+}
 
 
 @media only screen and (min-width: 650px){
