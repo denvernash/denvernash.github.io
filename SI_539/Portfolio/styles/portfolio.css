@@ -16,7 +16,12 @@ body{
 }
 .fixed div, .fixed li {
   color: black;
+
 }
+.fixed .slide {
+  background-color: #dddddd;
+}
+
 
 .fixed img {
   filter: none;
@@ -299,14 +304,11 @@ nav img, .slide_close {
 .project_img:after{ background: linear-gradient(-90deg,#83a4d4, #b6fbff); z-index: -1;}
 
 
-.skl {display: none;}
-.skl img{
-height: 64px;
+.skl {display: none; }
+.skl img{ height: 64px; }
 
-}
-.skill-1, .skill-3, .skill-4{
-  display: block;
-}
+
+.skill-1, .skill-3, .skill-4{ display: block; }
 
 
 
@@ -340,18 +342,18 @@ footer{
 }
 
 .slide {
-  height: 288px;
+  height: 350px;
   width: 200px;
-
   position: absolute;
   right: 0;
-  background: darkgray;
+  background: #c3c3c3;
   display: none;
 }
 .slide li{
   list-style: none;
   line-height: 80px;
-  margin-left: -25px;
+  padding-left: 20px;
+
 }
 
 .slide_close{

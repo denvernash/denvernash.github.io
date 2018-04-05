@@ -1,4 +1,4 @@
-.port, .prof {
+.port, .prof, .cont {
   grid-template-areas:
   'header header header'
   'empty1 empty1 empty1'
@@ -16,10 +16,10 @@
 }
 
 
-.port #profile_pic, .prof #profile_pic {
+.port #profile_pic, .prof #profile_pic, .cont #profile_pic {
   display: none;
 }
-.port .social_links, .prof .social_links {
+.port .social_links, .prof .social_links, .cont .social_links {
   display: none;
 }
 .quote{
