@@ -2,6 +2,10 @@ body{
   overflow-x: hidden;
   overflow-y: scroll;
   font-family: 'Open Sans', sans-serif;
+  color: rgba(26,26,26,0.9)
+}
+strong {
+    font-weight: bold;
 }
 .fixed {
   position: fixed;
