@@ -14,6 +14,10 @@
   padding-right: 30px; */
   border-bottom: solid black 1px;
 }
+div .proj5_text{
+  margin-bottom: 0;
+  border-bottom: none;
+}
 
 
 .project_box{
@@ -49,21 +53,24 @@ margin-bottom: 20px;
 }
 
 .fig{
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
+  min-width: 320px;
   height: 17em;
 }
 
 
-.project_img, .project_img img{
-  width: 450px;
-  height: 17em;
-}
+
 p {
   display: none;
-  text-align: justify;
 }
 
-
+.project_img, .project_img img{
+  width: 100%;
+  max-width: 450px;
+  min-width: 320px;
+  height: 17em;
+}
 .project_box h4, .project_box h3{
 font-size: 20pt;
 }
@@ -79,11 +86,7 @@ font-size: 20pt;
   padding: 20px;
 }
 
-.method_box{
-  display: inline;
-  margin-bottom: 30px;
-  padding-right: 10px;
-}
+
 .mbtext{
   display: block;
   font-size: 14pt;
@@ -95,35 +98,64 @@ font-size: 20pt;
 
 .method_grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+
+  margin-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.project_img{
+  overflow: hidden;
+}
+.project_img img, .project_img h4 {
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+
 }
 
-/* .mb5{
-  grid-column: 2;
-  grid-row: 2;
+.project_img:hover img, .project_img:hover h4 {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  right: 25px;
+  bottom: 7px;
 }
 
-.mb6{
-  grid-column: 3;
-  grid-row: 2;
-} */
-
+.project_img:after{ background: none;}
 
 @media only screen and (min-width: 650px){
+
+
+  .project_img, .project_img img{
+    width: 450px;
+    height: 17em;
+  }
+  .project_box h4, .project_box h3{
+  font-size: 20pt;
+  }
+
+
+.method_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 
 p {
   display: block;
   font-size: 12pt;
-  padding: 20px;
+  padding: 20px 40px;
+  text-align: justify;
 
 }
 .portfolio{
   grid-template-columns: 1fr;
 }
-
-
-
 
 
 }
@@ -157,9 +189,25 @@ p {
   grid-row: 4;
 }
 
-/* .proj_text {
-  border-bottom: none;
-} */
+
+.method_grid{
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+
+}
+
+
+@media only screen and (min-width: 1080px){
+
+
+.method_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    padding-right: 20px;
+  }
 
 
 }
