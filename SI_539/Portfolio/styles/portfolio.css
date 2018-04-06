@@ -393,8 +393,9 @@ h2 {
 .ed_box h4{font-size: 13pt;}
 
 .ed_box img{
-  max-width: 325px;
+  max-width: 150px;
   max-height: 250px;
   margin: auto;
   display: block;
+  /* border-radius: 30%; */
 }
