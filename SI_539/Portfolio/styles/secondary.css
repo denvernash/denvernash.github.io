@@ -10,11 +10,15 @@
 .proj_text {
   margin-bottom: 60px;
   padding-bottom: 60px;
-  padding-left: 50px;
-  padding-right: 50px;
+  /* padding-left: 30px;
+  padding-right: 30px; */
   border-bottom: solid black 1px;
 }
 
+
+.project_box{
+margin-bottom: 20px;
+}
 
 .port #profile_pic, .prof #profile_pic, .cont #profile_pic {
   display: none;
@@ -54,20 +58,65 @@
   width: 450px;
   height: 17em;
 }
-p{
+p {
   display: none;
+  text-align: justify;
 }
 
 
-.project_box h4{
+.project_box h4, .project_box h3{
 font-size: 20pt;
 }
+
+.h3t {
+  font-size: 15pt;
+  margin-bottom: 20px;
+  color: #99633d;
+}
+
+.method{
+  height: 70px;
+  padding: 20px;
+}
+
+.method_box{
+  display: inline;
+  margin-bottom: 30px;
+  padding-right: 10px;
+}
+.mbtext{
+  display: block;
+  font-size: 14pt;
+  color: #0b1b19;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+
+}
+
+.method_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+}
+
+/* .mb5{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.mb6{
+  grid-column: 3;
+  grid-row: 2;
+} */
 
 
 @media only screen and (min-width: 650px){
 
-p{
+p {
   display: block;
+  font-size: 12pt;
+  padding: 20px;
+
 }
 .portfolio{
   grid-template-columns: 1fr;
@@ -93,7 +142,7 @@ p{
 }
 .proj_text{
   grid-column: 2;
-  margin-top: 30px;
+
 
 }
 
