@@ -14,11 +14,44 @@
   padding-right: 30px; */
   border-bottom: solid black 1px;
 }
+
 div .proj5_text{
   margin-bottom: 0;
   border-bottom: none;
 }
 
+
+.proj_text h3{
+  color: rgba(26,26,26,0.9);
+}
+
+.ed_text h4 {
+  color: rgba(26,26,26,0.9);
+  position: static;
+  font-size: 14pt;
+  font-weight: 400;
+  display: none;
+}
+.ed_text h5{
+  color: rgba(26,26,26,0.9);
+  font-size: 14pt;
+  padding: 15px;
+  font-weight: bold;
+}
+
+
+.ed_box h3{
+  font-weight: 800;
+  font-size: 16pt;
+}
+
+.project_box.proj_text.ed_text h4 {
+  font-size: 15pt;
+}
+
+.ed_box img{
+  border-radius: 0;
+}
 
 .project_box{
 margin-bottom: 20px;
@@ -63,6 +96,10 @@ margin-bottom: 20px;
 
 p {
   display: none;
+  line-height: 1.6em;
+}
+.ed_text p {
+  text-align: center;
 }
 
 .project_img, .project_img img{
@@ -125,6 +162,12 @@ font-size: 20pt;
 
 .project_img:after{ background: none;}
 
+
+.main_content .needs_padding{
+  margin-bottom: 50px;
+
+}
+
 @media only screen and (min-width: 650px){
 
 
@@ -132,9 +175,7 @@ font-size: 20pt;
     width: 450px;
     height: 17em;
   }
-  .project_box h4, .project_box h3{
-  font-size: 20pt;
-  }
+
 
 
 .method_grid {
@@ -162,6 +203,11 @@ p {
 
 
 @media only screen and (min-width: 900px){
+
+.ed_text h4 {
+  display: block;
+}
+
 .portfolio{
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -4,6 +4,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   color: rgba(26,26,26,0.9);
   min-width: 300px;
+
 }
 strong {
     font-weight: bold;
@@ -377,7 +378,9 @@ h2 {
 }
 
 .education{display: block;}
-.ed_box{margin-bottom: 30px;}
+.ed_box{
+  margin-bottom: 30px;
+}
 
 .ed_box h4, .ed_box h3{
   text-align: center;
@@ -388,6 +391,7 @@ h2 {
   font-size: 15pt;
   letter-spacing: 2px;
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 .ed_box h4{font-size: 13pt;}
@@ -397,5 +401,5 @@ h2 {
   max-height: 250px;
   margin: auto;
   display: block;
-  /* border-radius: 30%; */
+  border-radius: 30%;
 }
