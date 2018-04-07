@@ -137,7 +137,7 @@ nav img, .slide_close {
 #profile_pic {
   grid-area: profile;
   margin: auto auto 5px;
-  border: solid rgb(220,220,220,.1) 10px;
+  border: solid rgb(220,220,220,0.1) 10px;
   display: block;
   height: 200px;
 
@@ -182,7 +182,7 @@ nav img, .slide_close {
   text-align: center;
   margin: 0;
   margin-bottom: 80px;
-  min-width:
+
 
 }
 
@@ -235,7 +235,7 @@ nav img, .slide_close {
   opacity: 1;
   object-fit:cover;
   overflow: hidden;
-  transition: .5 ease;
+  transition: 0.5 ease;
   backface-visibility: hidden;
 }
 
@@ -403,4 +403,23 @@ h2 {
   margin: auto;
   display: block;
   border-radius: 30%;
+}
+
+.about_content p {
+  display: block;
+  text-align: center;
+  padding: 30px 30px 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.about_content{
+  margin-bottom: 20px;
+}
+.about_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  max-height: 500px;
+
 }

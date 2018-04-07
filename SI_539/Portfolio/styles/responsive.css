@@ -9,6 +9,13 @@
     margin-top: 0px;
   }
 
+.about_content p {
+  padding: 40px 40px 20px;
+}
+.about_content{
+  margin-left: 30px;
+  margin-right: 30px;
+}
 
 }
 @media only screen and (min-width: 650px){
