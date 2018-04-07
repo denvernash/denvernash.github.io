@@ -65,7 +65,7 @@ margin-bottom: 20px;
 }
 .quote{
   display: block;
-  grid-area: quote;
+  grid-area: 'quote';
 
 
   font-style: italic;

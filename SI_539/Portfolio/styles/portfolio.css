@@ -363,6 +363,12 @@ footer{
 
 }
 
+.slide li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .slide_close{
   position: absolute;
   left: 60%;
