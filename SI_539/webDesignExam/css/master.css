@@ -1,0 +1,20 @@
+body, div, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.buttons {
+  display: block;
+}
+
+.left, .right {
+  padding: 5%;
+  margin: 0;
+  border: solid blue 5px;
+  display: inline;
+  width: 39%;
+}
+.hidden {
+  display: none;
+}

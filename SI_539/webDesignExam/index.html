@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exam</title>
+    <link rel="stylesheet" href="./css/master.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      var hide = false;
+      var show = true;
+      $(".hide").click(function(){
+        if (show){
+          $("#left").addClass('hidden');
+          show = false
+          hide = true
+        }
+      });
+      $(".show").click(function(){
+        if (hide){
+          $("#left").removeClass('hidden');
+          show = true
+          hide = false
+        }
+      });
+      });
+    </script>
+
+  </head>
+  <body>
+    <h1>Denver Nash</h1>
+
+    <img id= 'left' class= 'left' src="./images/examPic.JPG" alt="Colleen" /><img class= 'right' src="./images/UMSI-logo.jpg" alt="UMSI"/>
+    <div class="buttons">
+    <input type = "submit" class = 'hide' value = "Hide Image">
+    <input type = "submit" class = 'show' value = "Show Image">
+    </div>
+  </body>
+</html>
