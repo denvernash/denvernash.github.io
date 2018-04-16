@@ -13,8 +13,13 @@ body, div, h1 {
   margin: 0;
   border: solid blue 5px;
   display: inline;
-  width: 39%;
+  width: 50%;
+  box-sizing: border-box;
 }
 .hidden {
   display: none;
+}
+.center{
+  margin: auto;
+  display: block;
 }

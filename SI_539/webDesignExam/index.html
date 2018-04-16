@@ -12,6 +12,7 @@
       $(".hide").click(function(){
         if (show){
           $("#left").addClass('hidden');
+          $("#right").addClass('center');
           show = false
           hide = true
         }
@@ -19,6 +20,7 @@
       $(".show").click(function(){
         if (hide){
           $("#left").removeClass('hidden');
+          $("#right").removeClass('center');
           show = true
           hide = false
         }
@@ -30,7 +32,7 @@
   <body>
     <h1>Denver Nash</h1>
 
-    <img id= 'left' class= 'left' src="./images/examPic.JPG" alt="Colleen" /><img class= 'right' src="./images/UMSI-logo.jpg" alt="UMSI"/>
+    <img id= 'left' class= 'left' src="./images/examPic.JPG" alt="Colleen" /><img id= 'right' class= 'right' src="./images/UMSI-logo.jpg" alt="UMSI"/>
     <div class="buttons">
     <input type = "submit" class = 'hide' value = "Hide Image">
     <input type = "submit" class = 'show' value = "Show Image">
