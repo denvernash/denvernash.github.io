@@ -44,7 +44,7 @@
   'empty1 empty1 empty1'
   'profile profile quote'
   'empty2 empty2 empty2';
-  height: 70vh;
+  height: 75vh;
   min-height: 400px;
 }
 
@@ -173,7 +173,7 @@
   'empty1 profile empty2'
   'empty1 social empty2'
   'empty1 quote empty2';
-  height: 85vh;
+  height: 100vh;
   min-height: 27em;
 }
 
